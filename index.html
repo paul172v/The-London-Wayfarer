@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The London Wayfarer Hostel</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,7 @@
 
       <div class="nav-bar-right">
         <ul class="nav-ul">
+          <li class="nav-link" id="scrollToTop">Top</li>
           <li class="nav-link" id="scrollToDorms">Dorms</li>
           <li class="nav-link" id="scrollToFacilities">Facilities</li>
           <li class="nav-link" id="scrollToGallery">Gallery</li>
@@ -34,7 +36,7 @@
     <section class="section section-hero">
       <div class="hero-rating-box backcolor-red" id="hero-rating">
         Rated <span class="hero-stars">★★★★</span> <br />on Hostelworld
-        <br /><span class="hero-text-small">Out of 597 reviews.</span>
+        <br /><span class="hero-text-small">out of 597 reviews.</span>
       </div>
       <div class="hero-pitch-box">
         We offer affordable, fun, safe accommodation for young backpackers and
@@ -62,100 +64,112 @@
       <button class="btn btn-book-now" id="btn-book-now--hero">Book Now</button>
     </section>
 
-    <section class="section section-dorms"  id="sectionDorms">
-      <h2 class="heading">Dorms</h2>
-      <div class="layout-img-text">
-        <div class="layout-img-text--img">
+    <section class="section-mobile-pitch">
+      <div class="mobile-pitch-wrapper">
+      <p class="mobile-pitch-text"  id="mobile-pitch">
+        We offer affordable, fun, safe accommodation for young backpackers and
+        students, right along the River Thames.
+      </p>
+      <p class="mobile-pitch-text" id='mobile-rating'>
+        Rated <span class="mobile-stars">★★★★</span> on Hostelworld
+        out of 597 reviews.</span>
+      </p>
+
+      <div class="testimonial-box" id="mobile-testimonial">
+        <div class="testimonial-box--left">
           <img
-            class="layout-img layout-img--left"
-            src="img/img1.jpg"
-            alt="Bunkbeds"
+            class="testimonial-img"
+            id="hero-testimonial-img"
+            src="img/testimonial-hero.jpg"
+            alt="Picture of a woman"
           />
         </div>
-        <div class="layout-img-text--text">
-          <ul class="text-ul text-ul--right">
-            <li>14 Bed Mixed Dorm (up to £10 p/n)</li>
-            <li>10 Bed Mixed Dorm (up to £12 p/n)</li>
-            <li>8 Bed Mixed Dorm (up to £13 p/n)</li>
-            <li>8 Bed Womens Dorm (up to £13 p/n)</li>
-            <li>4 Bed Mixed Dorm (up to £15 p/n)</li>
-            <li>4 Bed Womens Dorm (up to £15 p/n)</li>
-          </ul>
+        <div class="testimonial-box--right">
+          <p class="testimonial-text">
+            Great location and price for visiting London. Stayed here with some
+            friends in September 2018. We were on the top floor which offered
+            stunning views of the city. The hostel had a lot of amenities
+          </p>
+          <p class="testimonial-name">Katrina Holt,<br />Backpacker</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section section-dorms" id="sectionDorms">
+      <h2 class="heading">Dorms</h2>
+      <div class="dorms-wrapper">
+        <img class="dorms-img" src="img/img1.jpg" alt="Image of bunkbeds" />
+        <ul class="text-list" id="dorms-text-list">
+          <li>14 Bed Mixed Dorm (up to £10 p/n)</li>
+          <li>10 Bed Mixed Dorm (up to £12 p/n)</li>
+          <li>8 Bed Mixed Dorm (up to £13 p/n)</li>
+          <li>8 Bed Womens Dorm (up to £13 p/n)</li>
+          <li>4 Bed Mixed Dorm (up to £15 p/n)</li>
+          <li>4 Bed Womens Dorm (up to £15 p/n)</li>
+        </ul>
       </div>
     </section>
 
     <section class="section section-facilities" id="sectionFacilities">
       <h2 class="heading">Facilities</h2>
-      <div class="layout-img-text">
-        <div class="layout-img-text--text">
-          <ul class="text-ul text-ul--left">
-            <li>24 hour reception</li>
-            <li>Pre check-in luggage storage available</li>
-            <li>Padlocks available to buy</li>
-            <li>Chargers available to buy</li>
-          </ul>
-        </div>
-        <div class="layout-img-text--img">
-          <img
-            class="layout-img layout-img--right"
-            src="img/img2.jpg"
-            alt="Bunkbeds"
-          />
-        </div>
+
+      <div class="facilities-textImg-wrapper">
+        <ul class="text-list facilities-text facilities-text--left">
+          <li>24 hour reception</li>
+          <li>Pre check-in luggage storage available</li>
+          <li>Padlocks available to buy</li>
+          <li>Chargers available to buy</li>
+        </ul>
+
+        <img
+          class="facilities-img facilities-img--right"
+          src="img/img2.jpg"
+          alt="Picture of customers at a reception desk"
+        />
       </div>
 
-      <div class="layout-img-text">
-        <div class="layout-img-text--img">
-          <img
-            class="layout-img layout-img--left"
-            src="img/img3.jpg"
-            alt="Bunkbeds"
-          />
-        </div>
-        <div class="layout-img-text--text">
-          <ul class="text-ul text-ul--right">
-            <li>Lounge open 24/7</li>
-            <li>Communal televison</li>
-            <li>Tables for laptops</li>
-            <li>Movie nights every Tuesday</li>
-            <li>Pub crawl every Friday</li>
-          </ul>
-        </div>
+      <div class="facilities-imgText-wrapper">
+        <img
+          class="facilities-img facilities-img--left"
+          src="img/img3.jpg"
+          alt="Picture of customers at a reception desk"
+        />
+
+        <ul class="text-list facilities-text facilities-text--right">
+          <li>Lounge open 24/7</li>
+          <li>Communal Televison</li>
+          <li>Tables for laptops</li>
+          <li>Movie nights every Tuesday</li>
+          <li>Pub Crawl every Friday</li>
+        </ul>
       </div>
 
-      <div class="layout-img-text">
-        <div class="layout-img-text--text">
-          <ul class="text-ul text-ul--left">
-            <li>Kitchen open 7am - 10pm</li>
-            <li>Breakfast available from 7am - 9am</li>
-            <li>Oven, microwave, fridges, freezers and cupboards available</li>
-          </ul>
-        </div>
-        <div class="layout-img-text--img">
-          <img
-            class="layout-img layout-img--right"
-            src="img/img4.jpg"
-            alt="Bunkbeds"
-          />
-        </div>
+      <div class="facilities-textImg-wrapper">
+        <ul class="text-list facilities-text facilities-text--left">
+          <li>Kitchen open 7am - 10pm</li>
+          <li>Breakfast available from 7am - 9am</li>
+          <li>Oven, microwave, fridges, freezers and cupboards available</li>
+        </ul>
+
+        <img
+          class="facilities-img facilities-img--right"
+          src="img/img4.jpg"
+          alt="Picture of customers at a reception desk"
+        />
       </div>
 
-      <div class="layout-img-text">
-        <div class="layout-img-text--img">
-          <img
-            class="layout-img layout-img--left"
-            src="img/img5.jpg"
-            alt="Bunkbeds"
-          />
-        </div>
-        <div class="layout-img-text--text">
-          <ul class="text-ul text-ul--right">
-            <li>Shared bathrooms & showers</li>
-            <li>Washing machines available</li>
-            <li>Towels available to rent from reception</li>
-          </ul>
-        </div>
+      <div class="facilities-imgText-wrapper">
+        <img
+          class="facilities-img facilities-img--left"
+          src="img/img5.jpg"
+          alt="Picture of customers at a reception desk"
+        />
+
+        <ul class="text-list facilities-text facilities-text--right">
+          <li>Shared bathrooms and showers</li>
+          <li>Washing machines available</li>
+          <li>Towels available to rent from reception</li>
+        </ul>
       </div>
     </section>
 
@@ -266,18 +280,30 @@
     <section class="section section-location" id="sectionLocation">
       <h2 class="heading">Location</h2>
 
-      <div class="layout-img-text">
-        <div class="layout-img-text--text">
-          <ul class="location-text-wrapper">
-            <p class='location-text'>From Charlton Station, head north up Charlton Church Road. Turn Left at the Anchor and Hope, we are the forth building on the right. </p>
-            <p class='location-text'>From the Anchor and Hope bus lane (472),  head north at the roundabout and then turn left. You’ll find us on the righthand side, opposite Sainsbury’s Thameside. </p>
-          </div>
-        <div class="layout-img-text--img"  id="location-wrapper">
-          <iframe class='location-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.111195878154!2d0.0243358014050086!3d51.49282691948962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a84032c2f267%3A0x52149cf3830f7bf3!2sLondon%20SE7%207SU!5e0!3m2!1sen!2suk!4v1625778591273!5m2!1sen!2suk" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        </div>
+      <div class="location-wrapper">
+        <div class="text-list location-text-wrapper">
+          <p class="location-text">
+            From Charlton Station, head north up Charlton Church Road. Turn Left
+            at the Anchor and Hope, we are the forth building on the right.
+          </p>
+          <p class="location-text">
+            From the Anchor and Hope bus lane (472), head north at the
+            roundabout and then turn left. You’ll find us on the righthand side,
+            opposite Sainsbury’s Thameside.
+          </p>
+        </div>
+
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.111195878154!2d0.0243358014050086!3d51.49282691948962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a84032c2f267%3A0x52149cf3830f7bf3!2sLondon%20SE7%207SU!5e0!3m2!1sen!2suk!4v1625778591273!5m2!1sen!2suk"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
 
-    <section class='section section-contact' id="sectionContact">
+    <section class="section section-contact" id="sectionContact">
       <h2 class="heading">Contact</h2>
       <p class="contact-text">The London Wayfarer Hostel</p>
       <p class="contact-text">Riverside</p>
@@ -290,11 +316,21 @@
     </section>
 
     <footer class="footer">
-      <div class=foot-copyright-box>
-        <p class="foot-copyright-text">Copyright © 2021, The London Wayfarer Hostel</p>
+      <div class="foot-copyright-box">
+        <p class="foot-copyright-text">
+          Copyright © 2021, The London Wayfarer Hostel
+        </p>
         <div class="social-box">
-          <img class='icon icon-facebook' src="icons/logo-facebook.svg" alt="facebook icon">
-          <img class='icon icon-instagram' src="icons/logo-instagram.svg" alt="instagram icon">
+          <img
+            class="icon icon-facebook"
+            src="icons/logo-facebook.svg"
+            alt="facebook icon"
+          />
+          <img
+            class="icon icon-instagram"
+            src="icons/logo-instagram.svg"
+            alt="instagram icon"
+          />
         </div>
       </div>
 
@@ -302,9 +338,13 @@
         <p class="credits-text">Designed and created by 172v Web Design</p>
         <div class="sources-wrapper">
           <p>Foot icon by <a href="https:www.freepik.com">Freepik</a></p>
-          <p>Photos by <a href="https://omycotton.com/?ref=pexels">Cottonbro</a></p>
-          <p>Facebook and Instagram icons by <a href="https://ionic.io/ionicons">Ion Icons</a></p>
-
+          <p>
+            Photos by <a href="https://omycotton.com/?ref=pexels">Cottonbro</a>
+          </p>
+          <p>
+            Facebook and Instagram icons by
+            <a href="https://ionic.io/ionicons">Ion Icons</a>
+          </p>
         </div>
       </div>
     </footer>
@@ -313,27 +353,31 @@
 
     <div class="modal-background"></div>
 
-
     <!----Modal Gallery----->
 
     <div class="modal-gal-img">
       <div class="modal-gal-inner-wrapper">
-      <button class="btn-arrow btn-gal btn-prev">◄</button>
-      <img class="gal-img-large land" src="img/fullscreen/gal6.jpg" alt="modal gallery image">
-      <button class="btn-arrow btn-gal btn-next">►</button>
-    </div>
+        <button class="btn-arrow btn-gal btn-prev">◄</button>
+        <img
+          class="gal-img-large land"
+          src="img/fullscreen/gal6.jpg"
+          alt="modal gallery image"
+        />
+        <button class="btn-arrow btn-gal btn-next">►</button>
+      </div>
     </div>
     <button class="btn-gal btn-close-gal">X</button>
 
-     <!----Modal Book Now Popup----->
-     <div class="modal-text-box-popup">
-       <p class="modal-popup-text">
-        The Book Now button would take you to Hostelworld to make a booking, this feature is not included as part of the London Wayfarer portfolio piece.
-       </p>
-       <button class="btn btn-close-popup">Close</button>
-     </div>
+    <!----Modal Book Now Popup----->
+    <div class="modal-text-box-popup">
+      <p class="modal-popup-text">
+        The Book Now button would take you to Hostelworld to make a booking,
+        this feature is not included as part of the London Wayfarer portfolio
+        piece.
+      </p>
+      <button class="btn btn-close-popup">Close</button>
+    </div>
 
-
-    <script src='js/script.js'></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
