@@ -15,8 +15,10 @@ html {
 
 body {
   font-family: "Salsa", sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #333333;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 h1,
@@ -47,7 +49,7 @@ a:hover {
   font-size: 105%;
 }
 
-/* ---- REUSAbLE ---- */
+/* ---- Reusable ---- */
 .btn {
   cursor: pointer;
   border-radius: 4px;
@@ -84,126 +86,6 @@ a:hover {
   color: #f2994a;
 }
 
-/*-- Layout --*/
-
-.layout-img-text {
-  width: 100vw;
-  display: flex;
-  margin-top: 8rem;
-  justify-content: center;
-}
-
-.layout-img-text:first-of-type {
-  margin-top: 0;
-}
-
-.layout-img-text--img {
-  width: 40%;
-  justify-content: center;
-  align-self: center;
-}
-
-.layout-img {
-  width: 60%;
-  justify-self: center;
-  align-self: center;
-  border: 1px solid #f2994a;
-}
-
-.layout-img-text--text {
-  width: 60%;
-  display: flex;
-}
-
-/*-- Testimonials --*/
-
-.text-ul {
-  color: #f2994a;
-  font-size: 2rem;
-  align-self: center;
-}
-
-.text-ul li {
-  padding: 2rem 0;
-}
-
-.testimonial-box {
-  height: 10rem;
-  width: 35rem;
-  padding: 2.5rem 2.5rem 5rem 2.5rem;
-  border-radius: 4px;
-  border: 1px solid black;
-  font-family: "Ruluko", sans-serif;
-  background-color: #eb5757cb;
-
-  display: flex;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-
-.testimonial-box--left {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.testimonial-img {
-  width: 100%;
-  height: 110%;
-  justify-self: center;
-  align-self: center;
-  border: 1px solid black;
-  margin-right: 2rem;
-  border-radius: 50%;
-}
-
-.testimonial-box--right {
-  width: 80%;
-  height: 100%;
-  padding-left: 1rem;
-}
-
-.testimonial-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.testimonial-name {
-  font-size: 1.6rem;
-  font-weight: bold;
-  padding-top: 1rem;
-  text-align: end;
-  font-family: "Salsa", sans-serif;
-}
-
-/*-- Layout: Image\Text --*/
-
-.layout-img--left {
-  margin-left: 40%;
-}
-
-.text-ul--right {
-  padding-left: 20%;
-}
-
-/*-- Layout: Text\Img --*/
-
-.layout-img--right {
-  margin-right: 40%;
-}
-
-.text-ul--left {
-  padding-left: 50%;
-}
-
-.text-ul--left li {
-  width: 40rem;
-}
-
 /* ---- NAV ---- */
 
 .nav-bar {
@@ -218,7 +100,7 @@ a:hover {
 
 .nav-bar-left {
   display: flex;
-  padding-left: 8rem;
+  margin-left: 8rem;
 }
 
 .nav-logo {
@@ -233,7 +115,7 @@ a:hover {
 }
 
 .nav-bar-right {
-  padding-right: 8rem;
+  margin-right: 12rem;
   display: flex;
 }
 
@@ -336,15 +218,153 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* ---- MOBILE PITCH SECTION ---- */
+.section-mobile-pitch {
+  background-color: #333333;
+  color: #f2984a;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+
+.mobile-pitch-wrapper {
+  display: grid;
+  grid-template-columns: 20vw 70vw 10vw;
+  grid-template-rows: 8rem 8rem 16rem;
+  grid-gap: 18rem;
+}
+
+.mobile-pitch-text {
+  font-size: 3rem;
+  width: 75%;
+}
+
+#mobile-pitch {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  width: 80%;
+  margin: 6rem 0 0 2vw;
+}
+
+#mobile-rating {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  width: 80%;
+  margin: 4rem 0 4rem 2vw;
+}
+
+#mobile-testimonial {
+  position: inherit;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 0 10vw 6rem 0;
+  height: 14rem;
+  width: 40rem;
+  color: black;
+}
+
 /* ---- DORMS SECTION ---- */
+
+.section-dorms,
+.section-facilities,
+.section-location {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.dorms-wrapper {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 60rem 25rem 80rem;
+  grid-template-rows: 60rem;
+  margin-bottom: 4rem;
+}
+
+.dorms-img {
+  border: 2px solid #f2984a;
+  height: 60rem;
+  margin-left: 25rem;
+}
+
+.text-list {
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: "Ruluko", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: #f2984a;
+}
+
+#dorms-text-list {
+  grid-column: 3/4;
+}
+
+#dorms-text-list li {
+  margin: 3rem 0;
+}
 
 /* ---- FACILITIES SECTION ---- */
 
-.section-facilities {
+/* (text left / image right) */
+.facilities-textImg-wrapper {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 80rem 25rem 60rem;
+  grid-template-rows: 40rem;
+  margin: 4rem 0;
+}
+
+.facilities-text--left {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin-left: 40%;
+  width: 60%;
+}
+
+.facilities-img--right {
+  margin-left: 20%;
+}
+
+/* (text righ / image left) */
+.facilities-imgText-wrapper {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 60rem 25rem 80rem;
+  grid-template-rows: 40rem;
+  margin: 4rem 0;
+}
+
+.facilities-text--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  width: 60%;
+  grid-column: 3/4;
+}
+
+.facilities-img--left {
+  margin-left: 32%;
+}
+
+/* (shared by left/right and right/left wrappers) */
+.facilities-text li {
+  margin: 2rem 0;
+}
+
+.facilities-img {
+  height: 40rem;
+  border: 2px solid #f2984a;
 }
 
 /* ---- TESTIMONIALS SECTION ---- */
@@ -361,6 +381,59 @@ a:hover {
   align-content: space-between;
   justify-content: space-between;
   margin: 6rem 10%;
+}
+
+.testimonial-box {
+  height: 10rem;
+  width: 35rem;
+  padding: 2.5rem 2.5rem 5rem 2.5rem;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-family: "Ruluko", sans-serif;
+  background-color: #eb5757cb;
+
+  display: flex;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.testimonial-box--left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 110%;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid black;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.testimonial-box--right {
+  width: 80%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  text-align: end;
+  font-family: "Salsa", sans-serif;
 }
 
 /* ---- GALLERY SECTION ---- */
@@ -444,33 +517,34 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin-bottom: 2rem;
 }
 
-#location-wrapper {
-  margin-right: 10%;
+.location-wrapper {
+  display: grid;
+  grid-template-columns: 50rem 20rem 60rem;
+  grid-template-rows: 50rem;
+  margin: 4rem 0;
+  align-self: center;
 }
 
 .location-text-wrapper {
-  width: 50%;
-  align-self: center;
-
-  margin-left: 30%;
+  margin-top: 13rem;
 }
 
-.location-text {
-  color: #f2994a;
-  font-size: 2rem;
+.location-text-wrapper p {
+  margin: 2rem 0;
   align-self: center;
-}
-
-.location-text:first-child {
-  padding-bottom: 4rem;
+  justify-self: center;
 }
 
 .location-map {
   padding: 2px;
   background-color: #f2994a;
   margin: 4rem;
+  width: 55rem;
+  height: 45rem;
+  grid-column: 3/4;
 }
 
 /* ---- CONTACT SECTION ---- */
@@ -503,6 +577,7 @@ a:hover {
   background-color: #f2994a;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .foot-copyright-box {
@@ -556,6 +631,7 @@ a:hover {
   align-content: center;
   justify-content: center;
   width: 80rem;
+  margin-right: -7rem;
 }
 
 .sources-wrapper {
@@ -617,7 +693,7 @@ a:hover {
 }
 
 .port {
-  height: 80vh;
+  width: 30vw;
   border: 2px solid #f2994a;
 }
 
