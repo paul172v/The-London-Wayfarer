@@ -11,6 +11,7 @@
 html {
   /* --- This defines what the base font size is. --- */
   font-size: 62.5%; /* --- 1rem = 10px; 10px/16px = 62.5%  --- */
+  overflow-x: hidden;
 }
 
 body {
@@ -96,6 +97,8 @@ a:hover {
   justify-content: space-between;
   position: fixed;
   z-index: 9000;
+  top: 0;
+  left: 0;
 }
 
 .nav-bar-left {
@@ -586,6 +589,7 @@ a:hover {
   align-content: center;
   justify-content: center;
   width: 40rem;
+  margin-right: 20rem;
 }
 
 .foot-copyright-text {
@@ -642,7 +646,7 @@ a:hover {
 
 .sources-wrapper p {
   padding-right: 2rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .sources-wrapper p:last-child {
