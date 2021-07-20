@@ -11,3 +11,6 @@ https://www.figma.com/file/LQQjsUfeM0NKW1V0Ksasyh/The-London-Wayfarer-Hostel-Hig
 Updates;
 19/07/21
 Changed the Dorms, Facilities and Location section to CSS Grid so making the site responsive is easier and made alterations to the html and style.css doc to support this. Refactored my script.js file. Added a mobile hero image. Also added a queries.css file with all the media query data, site should now be fully responsive but am unable to test on physical devices as I don't currently have a web server.  
+
+0/07/21
+Added portrait and landscape only media queries for the modal popups to help with responsiveness. 
