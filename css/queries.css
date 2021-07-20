@@ -1,4 +1,17 @@
-/* Screens below 1600px width */
+@media only screen and (min-width: 1921px) {
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .nav-bar-left {
+    margin-right: 10vw;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .testimonials-wrapper {
     flex-direction: column;
@@ -10,7 +23,6 @@
   }
 }
 
-/* Screens below 1400px width */
 @media only screen and (max-width: 1400px) {
   .gallery-wrapper {
     display: grid;
@@ -103,7 +115,6 @@
   }
 }
 
-/* Screens below 1350px width */
 @media only screen and (max-width: 1350px) {
   .hero-pitch-box {
     display: none;
@@ -204,7 +215,6 @@
   }
 }
 
-/* Screens below 1049px width */
 @media only screen and (max-width: 1049px) {
   body {
     overflow-x: none;
@@ -370,5 +380,33 @@
     grid-template-columns: 20vw 70vw 10vw;
     grid-template-rows: 6rem 8rem 16rem;
     grid-gap: 18rem;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .port {
+    width: 70vw;
+  }
+
+  .land {
+    width: 65vw;
+  }
+
+  .modal-text-box-popup {
+    width: 50vw;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .port {
+    width: 30vw;
+  }
+
+  .land {
+    width: 65vw;
+  }
+
+  .modal-text-box-popup {
+    width: 50vw;
   }
 }
