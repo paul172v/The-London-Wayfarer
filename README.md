@@ -4,7 +4,7 @@ This is a simple one page brochure website, it uses vanilla html, css and javasc
 
 At the time of writing (16/7/21) this project is in mid-development. I still need to refactor the code, make the site responsive and do general tweaks before it is complete. 
 
-The site was created using this Figma design as a blueprint;
+The site was created using my Figma design as a blueprint;
 https://www.figma.com/file/LQQjsUfeM0NKW1V0Ksasyh/The-London-Wayfarer-Hostel-High-Fidelity?node-id=0%3A1
 
 
