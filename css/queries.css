@@ -381,6 +381,18 @@
     grid-template-rows: 6rem 8rem 16rem;
     grid-gap: 18rem;
   }
+
+  .dorms-img {
+    margin-top: 3rem;
+  }
+
+  #dorms-text-list li {
+    margin: 3rem 0;
+  }
+
+  .gallery-wrapper {
+    margin-top: 3rem;
+  }
 }
 
 @media only screen and (orientation: portrait) {
